@@ -1,4 +1,4 @@
-package org.example;
+package _2023_01_01;
 
 import java.util.Scanner;
 
