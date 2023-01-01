@@ -29,6 +29,7 @@ nb-configuration.xml
 .settings/
 
 # Intellij
+.idea/
 *.iml
 *.iws
 
@@ -37,6 +38,7 @@ nb-configuration.xml
 
 # Maven
 log/
+target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -46,3 +48,4 @@ dependency-reduced-pom.xml
 
 
 WAS/apache-tomcat-9.0.70-windows-x64
+out
