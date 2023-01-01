@@ -1,0 +1,45 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: lacy
+  Date: 2023/01/01
+  Time: 11:57 AM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>로그인</title>
+</head>
+<body>
+<form id="login_form" method="post" action="/2023.01.01/lesson/login_action.jsp">
+    <table style="text-align: center;">
+        <tr>
+            <td colspan="2">로그인 페이지</td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">아이디 : </td>
+            <td><input type="text" id="id" name="id" placeholder="아이디를 입력해주세요."></td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">비밀번호 : </td>
+            <td><input type="password" name="pw" placeholder="비밀번호를 입력해주세요."></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="button" onclick="submit()">로그인</button>
+                <button type="button" onclick="id_reset()">초기화</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+<script>
+    function submit () {
+        document.getElementById('login_form').submit();
+    }
+
+    function id_reset () {
+        document.getElementById('id').value = "";
+    }
+</script>
+</html>
