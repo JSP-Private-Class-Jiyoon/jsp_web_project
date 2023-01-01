@@ -16,8 +16,16 @@
     String id = request.getParameter("id");
     String pw = request.getParameter("pw");
 
-    String access_join = ((id == null || id.equals("undefined") || id.equals("")) ||
-            (pw == null || pw.equals("undefined") || pw.equals(""))) ? "fail" : "pass";
+    // 삼항 연산자
+//    String access_join = ((id == null || id.equals("undefined") || id.equals("")) ||
+//            (pw == null || pw.equals("undefined") || pw.equals(""))) ? "fail" : "pass";
+
+    String access_join = "pass";
+    if (id == null || id.equals("undefined") || id.equals("")) {
+        access_join = "fail";
+    } else if (pw == null || pw.equals("undefined") || pw.equals("")) {
+        access_join = "fail";
+    }
 %>
 </body>
 <script>
