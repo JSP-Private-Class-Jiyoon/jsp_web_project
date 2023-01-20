@@ -8,7 +8,7 @@
     String id = request.getParameter("id");
 %>
 <header>
-    <h1>어서오세요 <%=ID%>님 게시판입니다.</h1>
+    <h1>어서오세요 <%=id%>님 게시판입니다.</h1>
 </header>
 <table border="1">
     <tr>
@@ -145,7 +145,7 @@
 <script>
     var a =document.referrer;
     if (a != 'http://localhost:8990/2023.01.20/login_action.jsp') {
-        history.back()
+        history.back();
     }
 </script>
 </html>

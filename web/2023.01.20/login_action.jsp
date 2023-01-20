@@ -9,19 +9,17 @@
     String id = request.getParameter("id");
     String pw = request.getParameter("pw");
 
-
+    String is_post = (request.getMethod().equals("GET")) ? "N" : "Y";
 %>
 </body>
 <script>
-var a =document.referrer;
-if (a != 'http://localhost:8990/2023.01.20/login.jsp'){
-    alert("잘못된 접근입니다.")
-     history.back()
-}
     const id = "test";
     const pw = "test";
 
-        if (id != '<%= id %>' || pw != '<%= pw %>') {
+    if ("<%= is_post%>" == "N"){
+        alert("잘못된 접근입니다.");
+        location.replace('/2023.01.20/login.jsp');
+    } else if (id != '<%= id %>' || pw != '<%= pw %>') {
             alert('아이디 또는 비밀번호가 일치하지 않습니다.');
             location.replace('/2023.01.20/login.jsp');
         } else {
