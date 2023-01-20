@@ -1,18 +1,14 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lacy
-  Date: 2022/12/11
-  Time: 11:27 AM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>게시판</title>
 </head>
 <body>
+<%
+    String id = request.getParameter("id");
+%>
 <header>
-    <h1>어서오세요 <%= request.getParameter("id") %>님 게시판입니다.</h1>
+    <h1>어서오세요 <%=ID%>님 게시판입니다.</h1>
 </header>
 <table border="1">
     <tr>
@@ -146,4 +142,10 @@
     <h4>jsp 기반으로 만들어진 게시판 입니다.</h4>
 </footer>
 </body>
+<script>
+    var a =document.referrer;
+    if (a != 'http://localhost:8990/2023.01.20/login_action.jsp') {
+        history.back()
+    }
+</script>
 </html>
