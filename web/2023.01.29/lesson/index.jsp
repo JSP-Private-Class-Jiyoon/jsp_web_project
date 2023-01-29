@@ -65,7 +65,7 @@
     }
 
     function move_login_out () {
-      location.href = "/2023.01.29/lesson/login_out.jsp";
+      location.href = "/2023.01.29/lesson/logout.jsp";
     }
   </script>
 </html>
