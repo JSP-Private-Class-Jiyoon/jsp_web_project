@@ -54,10 +54,10 @@
   </body>
   <script>
     function getItem (itemName) {
-      location.href='/2023.03.12/lesson/cartApi.jsp?itemName=' + itemName;
+      location.href='/2023.03.19/lesson/cartApi.jsp?itemName=' + itemName;
     }
     function goCart () {
-      location.href='/2023.03.12/lesson/cartApi.jsp?itemName=commit';
+      location.href='/2023.03.19/lesson/cartApi.jsp?itemName=commit';
     }
   </script>
 </html>

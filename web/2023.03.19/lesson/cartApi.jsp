@@ -26,6 +26,6 @@
     Cookie cartCookie = new Cookie("cart", cart);
     cartCookie.setMaxAge(60*60*3);
     response.addCookie(cartCookie);
-    response.sendRedirect("/2023.03.12/lesson/index.jsp");
+    response.sendRedirect("/2023.03.19/lesson/index.jsp");
   }
 %>
