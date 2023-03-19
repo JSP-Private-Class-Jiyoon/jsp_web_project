@@ -48,7 +48,10 @@
         <td><button type="button" onclick="getItem('패딩')">담기</button></td>
       </tr>
       <tr>
-        <td colspan="5"><button type="button" onclick="goCart()">장바구니로 이동</button></td>
+        <td colspan="5">
+          <button type="button" onclick="goCart()">장바구니로 이동</button>
+          <button type="button" onclick="clearCart()">장바구니 비우기</button>
+        </td>
       </tr>
     </table>
   </body>
@@ -58,6 +61,9 @@
     }
     function goCart () {
       location.href='/2023.03.19/lesson/cartApi.jsp?itemName=commit';
+    }
+    function clearCart () {
+      location.href='/2023.03.19/lesson/cartApi.jsp?itemName=clear';
     }
   </script>
 </html>
