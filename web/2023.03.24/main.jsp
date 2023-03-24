@@ -18,10 +18,10 @@
         }
     }
     if(id == null){
-        response.sendRedirect("/2023.03.24/log_ot.jsp");
+        response.sendRedirect("/2023.03.24/log_out.jsp");
     }
 %>
 <%=id %> 님 반갑습니다.
-<a href="logout.jsp">로그아웃</a>
+<a href="log_out.jsp">로그아웃</a>
 </body>
 </html>
