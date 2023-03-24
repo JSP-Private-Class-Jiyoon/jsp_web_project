@@ -65,7 +65,7 @@
  function  goCart () {
      location.href='/2023.03.19/cartApi.jsp?itemName=commit';
  }
- function  clearCart () {
+ function clearCart () {
      location.href='/2023.03.19/catApi.jsp?itemName=clear';
  }
 </script>

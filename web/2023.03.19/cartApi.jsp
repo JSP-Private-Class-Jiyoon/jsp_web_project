@@ -10,7 +10,7 @@
     if (cookies != null) {
         for (Cookie c : cookies) {
             if (c.getName().equals("cart")) {
-                cart = URLDecoder.decode(c.getValue(), "utf-8");
+                cart = URLDecoder.decode(c.getValue(), "UTF-8");
                 break;
             }
         }
@@ -18,11 +18,11 @@
 
     if (itemName.equals("commit")) {
         PrintWriter print = response.getWriter();
-        print.println(URLDecoder.decode(cart, "utf-8"));
+        print.println(URLDecoder.decode(cart, "UTF-8"));
     } else {
         String product = request.getParameter("itemName");
         cart += product + " / ";
-        cart = URLEncoder.encode(cart, "utf-8");
+        cart = URLEncoder.encode(cart, "UTF-8");
         Cookie cartCookie = new Cookie("cart", cart);
         cartCookie.setMaxAge(60*60*3);
         response.addCookie(cartCookie);
